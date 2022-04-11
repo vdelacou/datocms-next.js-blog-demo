@@ -10,13 +10,13 @@ export default function Alert({ preview }) {
       })}
     >
       <Container>
-        <div className="py-2 text-center text-sm">
+        <div className="py-2 text-sm text-center">
           {preview ? (
             <>
               This is page is showing draft content.{" "}
               <a
                 href="/api/exit-preview"
-                className="underline hover:text-cyan duration-200 transition-colors"
+                className="underline transition-colors duration-200 hover:text-cyan"
               >
                 Click here
               </a>{" "}
@@ -26,8 +26,8 @@ export default function Alert({ preview }) {
             <>
               This is page is showing published content.{" "}
               <a
-                href="/api/preview"
-                className="underline hover:text-cyan duration-200 transition-colors"
+                href="/api/preview?secret=secret"
+                className="underline transition-colors duration-200 hover:text-cyan"
               >
                 Click here
               </a>{" "}
